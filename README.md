@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# trelloyes with Create React App
+
+This app will allow for the creation and manipulation of lists. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
