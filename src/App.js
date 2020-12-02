@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import List from './List.js';
 
 function App(props) {
   
@@ -12,13 +13,18 @@ function App(props) {
   const arrayOfLists = props.store.lists.map( (item) => {
     const headerValue = item.header;
     console.log(`Current list is ${headerValue}.`);
+    console.log()
     
     const cardsValue = item.cardIds.map( 
       (activeCard) => props.store.allCards[activeCard]);
     console.log('Array of card information for this list is:')
     console.log(cardsValue);
   
-    return `<li><List header='${headerValue}' cards='${cardsValue}' /></li>`;
+    return (
+      <li key={item.id} className='List'>
+        <List header={headerValue} cards={cardsValue} />
+      </li>
+    );
   });
 
 
@@ -29,11 +35,9 @@ function App(props) {
       <header className='App-header'>
         <h1>Trelloyes!</h1>
       </header>
-      <div className='App-list'>
-        <ul>
+       <ul className='App-list'>
           {arrayOfLists}
-        </ul>
-      </div>
+      </ul>
     </main>
   );
 }
