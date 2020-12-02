@@ -1,7 +1,7 @@
 # trelloyes
 
 ## General Description
-This app is intended as a tool to learn React. It is currently a non-responsive template for an app that allows for the creation and manipulation of lists. The GitHub-hosted page can be found [here](https://sam1cutler.github.io/trelloyes/).
+This app is intended as a tool to learn React. It is currently a non-responsive template for an app that allows for the creation and manipulation of lists. 
 
 ## Technology used
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), with elements of HTML, CSS, Javascript, and JSX.
