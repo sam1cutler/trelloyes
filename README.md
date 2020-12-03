@@ -10,4 +10,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 You can find [my GitHub page here](https://github.com/sam1cutler).
 
 ## Acknowledgements
-This project is the API Capstone project for the Thinkful software engineering bootcamp. 
+This project is part of an assignment for the Thinkful software engineering bootcamp. 
