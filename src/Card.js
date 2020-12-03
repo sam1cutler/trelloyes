@@ -2,8 +2,8 @@ import React from 'react';
 import './Card.css';
 
 function Card(props) {
-    console.log('Card.js ran, with the following props:');
-    console.log(props);
+    //console.log('Card.js ran, with the following props:');
+    //console.log(props);
 
     return (
         <div className='Card'>

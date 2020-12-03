@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders the List component as expected with the "Second List" cardlist. 1`] = `
+<div>
+  <header
+    className="List-header"
+  >
+    <h2>
+      Second list
+    </h2>
+  </header>
+  <div
+    className="List-cards"
+  >
+    <ul>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Second card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Third card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Fourth card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Sixth card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Eighth card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Ninth card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+      <li>
+        <div
+          className="Card"
+        >
+          <button
+            type="button"
+          >
+            delete
+          </button>
+          <h3>
+            Eleventh card
+          </h3>
+          <p>
+            lorem ipsum
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button
+      className="List-add-button"
+      type="button"
+    >
+      + Add Random Card
+    </button>
+  </div>
+</div>
+`;

@@ -2,11 +2,9 @@ import React from 'react';
 import './List.css';
 import Card from './Card.js';
 
-
-
 function List(props) {
-    console.log('List.js ran, with the following props:');
-    console.log(props);
+    //console.log('List.js ran, with the following props:');
+    //console.log(props);
 
     const arrayOfCards = props.cards.map( (item) => {
         return (
@@ -22,13 +20,14 @@ function List(props) {
                 <h2>{props.header}</h2>
             </header>
             <div className='List-cards'>
-                {arrayOfCards}
+                <ul>
+                    {arrayOfCards}
+                </ul>
                 <button type='button' className='List-add-button'>
                     + Add Random Card
                 </button>
             </div>
         </div>);
 }
-
 
 export default List;

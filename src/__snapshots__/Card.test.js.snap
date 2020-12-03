@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders the Card component as expected for the "e" (fifth) card 1`] = `
+<div
+  className="Card"
+>
+  <button
+    type="button"
+  >
+    delete
+  </button>
+  <h3>
+    Fifth card
+  </h3>
+  <p>
+    lorem ipsum
+  </p>
+</div>
+`;

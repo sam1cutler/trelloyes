@@ -4,21 +4,20 @@ import List from './List.js';
 
 function App(props) {
   
-  console.log('App.js ran, with the following props:')
-  console.log(props);
-
+  //console.log('App.js ran, with the following props:')
+  //console.log(props);
 
   // Generate an array of List Component calls (?) with the appropriate
   //    'header' and 'cards' props...
   const arrayOfLists = props.store.lists.map( (item) => {
     const headerValue = item.header;
-    console.log(`Current list is ${headerValue}.`);
-    console.log()
+    //console.log(`Current list is ${headerValue}.`);
+    //console.log()
     
     const cardsValue = item.cardIds.map( 
       (activeCard) => props.store.allCards[activeCard]);
-    console.log('Array of card information for this list is:')
-    console.log(cardsValue);
+    //console.log('Array of card information for this list is:')
+    //console.log(cardsValue);
   
     return (
       <li key={item.id} className='List'>
@@ -28,7 +27,7 @@ function App(props) {
   });
 
 
-  console.log(arrayOfLists);
+  //console.log(arrayOfLists);
 
   return (
     <main className='App'>
