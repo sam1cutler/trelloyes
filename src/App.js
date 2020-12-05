@@ -44,9 +44,79 @@ class App extends React.Component {
       'm': { id: 'm', title: 'Thirteenth card', content: 'lorem ipsum' },
     },
   }
+
+  handleDeleteItem = (fingerprint) => {
+    console.log(`User requested to delete the card.`)
+    console.log(`The card has id ${fingerprint.cardID} and is in the list with id ${fingerprint.listID}.`)
+
+    const newLists = this.state.lists.map( (listItem) => {
+      let newCardIds = ''
+      if (listItem.id === fingerprint.listID) {
+        newCardIds = listItem.cardIds.filter(id => id !== fingerprint.cardID)
+      } else {
+        newCardIds = listItem.cardIds
+      }
+      return ({
+        id: listItem.id,
+        header: listItem.header,
+        cardIds: newCardIds
+      })
+    })
+
+    this.setState({
+      lists: newLists
+    })
+
+  }
+
+  newRandomCardGenerator = () => {
+    const id = Math.random().toString(36).substring(2, 4)
+      + Math.random().toString(36).substring(2, 4);
+    return {
+      id,
+      title: `Random Card ${id}`,
+      content: 'lorem ipsum',
+    }
+  }
+
+  handleAddRandom = (listID) => {
+    console.log('User requested to add a random item.')
+
+    // generate random new card
+    const newRandomCard = this.newRandomCardGenerator()
+    console.log(newRandomCard)    
+
+    // add this card's info to the allCards object in the state
+    let tempCards = this.state.allCards
+    tempCards[newRandomCard.id] = newRandomCard
+
+    // update the lists object in the state
+    const newLists = this.state.lists.map( (listItem, i) => {
+      console.log('attempting to make a new list'+i)
+      
+      if (listItem.id === listID) {
+        console.log(listItem.cardIds) 
+        listItem.cardIds.push(newRandomCard.id)
+        console.log(listItem.cardIds)
+      } 
+      return ({
+        id: listItem.id,
+        header: listItem.header,
+        cardIds: listItem.cardIds
+      })
+    })
+
+    console.log(newLists)
+
+    this.setState({
+      lists: newLists
+    })
+    
+  }
   
   // Render array of List components w/ 'header' and 'cards' props
   makeListArray() {
+    
     return (
       this.state.lists.map( (item) => {
         const headerValue = item.header;
@@ -57,8 +127,11 @@ class App extends React.Component {
         return (
           <li key={item.id} className='List'>
             <List 
-              header={headerValue} 
-              cards={cardsValue} 
+              header={headerValue}
+              cards={cardsValue}
+              listID={item.id}
+              onDeleteItem={this.handleDeleteItem}
+              onAddRandom={this.handleAddRandom}
             />
           </li>
         );
@@ -67,6 +140,7 @@ class App extends React.Component {
   }
 
   render() {
+    //console.log(this.state.allCards)
     return (
       <main className='App'>
         <header className='App-header'>

@@ -4,7 +4,7 @@ import List from './List';
 import renderer from 'react-test-renderer';
 
 const sampleCards = [
-    {id: 'b', title: 'Second card', content: 'lorem ipsum' },
+    { id: 'b', title: 'Second card', content: 'lorem ipsum' },
     { id: 'c', title: 'Third card', content: 'lorem ipsum' },
     { id: 'd', title: 'Fourth card', content: 'lorem ipsum' },
     { id: 'f', title: 'Sixth card', content: 'lorem ipsum' },

@@ -18,6 +18,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -35,6 +36,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -52,6 +54,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -69,6 +72,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -86,6 +90,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -103,6 +108,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -120,6 +126,7 @@ exports[`List component renders the List component as expected with the "Second 
           className="Card"
         >
           <button
+            onClick={[Function]}
             type="button"
           >
             delete
@@ -135,6 +142,7 @@ exports[`List component renders the List component as expected with the "Second 
     </ul>
     <button
       className="List-add-button"
+      onClick={[Function]}
       type="button"
     >
       + Add Random Card

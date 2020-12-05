@@ -5,6 +5,7 @@ exports[`Card component renders the Card component as expected for the "e" (fift
   className="Card"
 >
   <button
+    onClick={[Function]}
     type="button"
   >
     delete

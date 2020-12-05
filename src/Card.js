@@ -5,9 +5,18 @@ function Card(props) {
     //console.log('Card.js ran, with the following props:');
     //console.log(props);
 
+    
+
+    //console.log(fingerprint)
+
     return (
         <div className='Card'>
-            <button type='button'>delete</button>
+            <button
+                type='button'
+                onClick={() => props.onDeleteItem(props.fingerprint)}
+            >
+                delete
+            </button>
             <h3>{props.title}</h3>
             <p>{props.content}</p>
         </div>
